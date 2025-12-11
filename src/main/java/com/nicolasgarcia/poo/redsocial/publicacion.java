@@ -2,17 +2,17 @@ package com.nicolasgarcia.poo.redsocial;
 
 import java.time.LocalTime;
 
-public class publicacion {
+public class Publicacion {
 private String texto;
 private LocalTime hora;
      private int likes;
 
-	public publicacion() {
+	public Publicacion() {
 	super();
 	// TODO Auto-generated constructor stub
 }
 
-	public publicacion(String texto, LocalTime hora, int likes) {
+	public Publicacion(String texto, LocalTime hora, int likes) {
 	super();
 	this.texto = texto;
 	this.hora = LocalTime.now();
@@ -43,13 +43,21 @@ public void setLikes(int likes) {
 	this.likes = likes;
 }
 public void mostrar() {
-	System.out.println(mostrar.getNombre());
-	System.out.println();
+	System.out.println(this.texto);
+	System.out.println(this.hora);
+	System.out.println(this.likes);
 	
 }
-public darMeGusta()
+public void darMeGusta() {
+	this.likes +=likes;
+	System.out.println(likes);
+	
+}
+public int verMeGusta() {
+	return this.likes;
+}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
