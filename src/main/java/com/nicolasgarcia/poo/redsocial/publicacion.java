@@ -49,15 +49,18 @@ public void mostrar() {
 	
 }
 public void darMeGusta() {
-	this.likes +=likes;
-	System.out.println(likes);
+	this.likes ++;
+	
 	
 }
 public int verMeGusta() {
 	return this.likes;
 }
 	public static void main(String[] args) {
-		
+		Publicacion p=new Publicacion();
+		p.mostrar();
+		p.darMeGusta();
+		p.verMeGusta();
 
 	}
 
